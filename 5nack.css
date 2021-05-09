@@ -1,0 +1,195 @@
+html,body{
+    margin: 10;
+    padding: 10;
+    background-color: #FBEFE0;
+    font-family: 'Roboto Slab', serif;;
+}
+
+h1{
+    margin-bottom: 40px;  
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-250px, -300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result{
+    position: absolute;
+    left: -20%;
+    top: 15%;
+}
+
+#scoreDisplay,
+#lengthDisplay{
+    background-color: #457544;
+    text-align: center;
+    margin: 15px 0;
+    width: 50px;
+    padding: 12px;
+    color: #ffffff;
+}
+
+.end{
+    display: none;
+    background-color:rgba(10, 135 , 135, 0.9);
+    height: 503px;
+    width: 503px;
+    position: absolute;
+    top: 17.5%;
+    color: #FBEFE0;
+}
+
+
+#game-over{
+    padding-top: 100px;
+    font-size: 50px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.result-display{
+    text-align: center;
+    margin-top: 0px;
+}
+
+#end-restart{
+    display: block;
+    margin: 220px;
+    margin-top: 70px;
+}
+
+/* ==============
+Instrction
+================= */
+
+.notice{
+    display: none;
+    position: absolute;
+    width: 503px;
+    height: 503px;
+    top: 17.5%;
+    z-index: 10;
+    background-color: #4F9BC4;
+}
+
+#instruction{
+    text-align: center;
+    margin: 50px;
+}
+
+.rules{
+    text-align: left;
+    margin: 20px 30px;
+}
+
+#question-mark{
+    position: absolute;
+    font-size: 25px;
+    left: 475px;
+    top: 65px;
+    padding: 2px 9px;
+    color: #457544;
+    cursor: pointer;
+}
+
+.volume{
+    display: block;
+    position: absolute;
+    font-size: 23px;
+    left: 440px;
+    top: 67px;
+    padding: 2px 9px;
+    color: #457544;
+    cursor: pointer;
+}
+
+.mute{
+    display: none;
+    color: #E5332A
+}
+
+#question-mark:hover,
+#question-mark:focus {
+    /* background-color: transparent;
+    border: solid 2px #000000; */
+    color: #000000;
+}
+
+
+
+#close-btn{
+    position: absolute;
+    left: 45%;
+    margin: 50px 0;
+}
+
+/* ===========
+board
+============== */
+
+.grid{
+    width: 500px;
+    height: 500px;
+    border: solid 5px #457544;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 20px;
+    height: 20px;
+}
+
+.snake{
+    border-radius: 2px;
+    background-color: #000000;
+    border: solid 3px #FBEFE0;
+    box-sizing: border-box;
+}
+
+.apple {
+    border-radius: 20px;
+    border: solid 3px #FBEFE0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #4F9BC4;
+}
+
+
+
+/* ===========
+Button 
+============== */
+
+button{
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color: #000000;
+    color:#FBEFE0;
+    outline: none;
+    box-sizing: border-box;
+    border: solid 3px #000000;
+}
+
+button:hover,
+button:focus{
+    color: black;
+    background-color: transparent;
+    box-sizing: border-box;
+    border : solid 3px #000000;
+}
+
+#start{
+    padding: 12px 19px;
+    width: 75px;
+}
+
+.block{
+    background-color: #E5332A;
+}

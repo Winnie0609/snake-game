@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="5nack.css">
+    <link rel="icon" href="https://img.icons8.com/flat-round/64/000000/snake--v1.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5755d4a973.js" crossorigin="anonymous"></script>
+    <title>The Snake Game</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>The Snake Game</h1>
+
+        <div class="result">
+            <div id="scoreDisplay"><span id="score">0</span></div>
+            <div id="lengthDisplay"><span id="length">1</span> m</div>
+            <button id="start"><i class="fas fa-play"></i></button>
+        </div>
+
+        <div class="grid"></div>
+
+        <div id="question-mark"><i class="far fa-question-circle"></i></div>
+        <div class="volume soundOn"><i class="fas fa-volume-up"></i></div>
+        <div class="volume mute"><i class="fas fa-volume-mute"></i></i></div>
+        <div class="notice">
+            <h2 id= "instruction">Instruction</h2>
+            <p class="rules">1. Click ᐅ to start your game.</p> 
+            <p class="rules">2. Please use the arrow key or WASD to control your snake.</p>
+            <p class="rules">3. Don't hit the border and the rock.</p>
+            <p class="rules">4. Don't change the direction too fast.</p>
+            <p class="rules">5. Enjoy your game!</p>
+            <button id="close-btn">Close</button>
+        </div>
+
+        <div class="end">
+            <p id="game-over">Game Over!</p>
+            <p class="result-display">You score <span id="last-result-score"></span> point(s)</p>
+            <p class="result-display">and your snake is <span id="last-result-length"></span> m!</p>
+            <button id="end-restart">Restart</button>
+        </div>
+    </div>
+
+    <div class="test"></div>
+    <script src="5nack.js"></script>
+</body>
+</html>
