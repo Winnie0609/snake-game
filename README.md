@@ -2,7 +2,8 @@
 A Snake Game built with Vanilla JS.
 
 ## Demo
-Blog :   
+[Blog]()
+[Live Demo](https://winnie0609.github.io/snake-game/5nack.html)
 ![](https://i.imgur.com/Yu06HZw.gif)
 
 ## Feature
